@@ -11,7 +11,7 @@ export default function HeroSection() {
         <button onClick={()=>nav('/quiz')} className="cta">Start Quiz</button>
       </div>
       <div className="hero-image">
-        {<img src="/src/assets/quiz-illustration.svg" alt="Quiz Illustration" />}
+        <img src="/src/assets/quiz-illustration.svg" alt="Quiz Illustration" />
       </div>
     </section>
   );
