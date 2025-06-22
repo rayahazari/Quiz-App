@@ -1,0 +1,15 @@
+/* src/components/NavBar.css */
+.navbar { position: fixed; top:0; width:100%; display:flex; background:#fff; padding:1rem; box-shadow:0 2px 5px rgba(0,0,0,0.1); z-index:100; }
+.logo { flex-grow:1; font-weight:bold; }
+.hamburger { display:none; font-size:1.5rem; background:none; border:none; }
+.nav-links { list-style:none; display:flex; gap:1rem; }
+@media(max-width:600px){
+  .hamburger { display:block; }
+  .nav-links { 
+    position:absolute; top:100%; left:0; right:0;
+    flex-direction:column; background:#fff;
+    max-height:0; overflow:hidden;
+    transition: max-height .3s ease;
+  }
+  .nav-links.open { max-height:200px; }
+}

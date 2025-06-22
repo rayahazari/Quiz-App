@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define theme colors directly -->
+  <defs>
+    <style type="text/css"><![CDATA[
+      .bg { fill: #e3f6f5; }
+      .book-secondary { fill: #ffe5d9; }
+      .book-primary { fill: #a8dadc; }
+      .book-accent { fill: #e9c46a; }
+      .bubble { fill: #ffffff; stroke: #a8dadc; stroke-width: 4; }
+      .bubble-text { fill: #a8dadc; font-family: 'Segoe UI', sans-serif; font-size: 100px; }
+      .pencil-body { fill: #ffe5d9; }
+      .pencil-tip { fill: #e9c46a; }
+      .dot-primary { fill: #a8dadc; opacity: 0.6; }
+      .dot-secondary { fill: #ffe5d9; opacity: 0.5; }
+      .dot-accent { fill: #e9c46a; opacity: 0.4; }
+    ]]></style>
+  </defs>
+
+  <!-- Background circle -->
+  <circle class="bg" cx="200" cy="150" r="140" />
+
+  <!-- Book stack -->
+  <rect class="book-secondary" x="100" y="170" width="80" height="60" rx="6" ry="6" />
+  <rect class="book-primary" x="110" y="155" width="80" height="60" rx="6" ry="6" />
+  <rect class="book-accent" x="120" y="140" width="80" height="60" rx="6" ry="6" />
+
+  <!-- Question mark bubble -->
+  <text class="bubble-text" x="270" y="112" text-anchor="middle">?</text>
+
+  <!-- Pencil icon -->
+  <polygon class="pencil-body" points="240,220 260,200 295,235 275,255" />
+  <rect x="258" y="202" width="6" height="40" fill="#ffffff" />
+  <polygon class="pencil-tip" points="295,235 305,225 265,185 255,195" />
+
+  <!-- Decorative dots -->
+  <circle class="dot-primary" cx="60" cy="60" r="20" />
+  <circle class="dot-secondary" cx="340" cy="240" r="6" />
+  <circle class="dot-accent" cx="50" cy="250" r="10" />
+</svg>

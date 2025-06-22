@@ -1,0 +1,6 @@
+/* src/components/HeroSection.css */
+.hero { display:flex; align-items:center; justify-content:space-between; padding:4rem 2rem; animation: fadeIn 1s ease; }
+.hero-image img { width:300px; animation: float 3s ease-in-out infinite; }
+@keyframes fadeIn { from { opacity:0 } to { opacity:1 } }
+@keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+@media(max-width:768px){ .hero { flex-direction:column; } .hero-image { margin-top:2rem; } }
